@@ -57,8 +57,8 @@ public class ExpenseServiceImpl implements ExpenseService {
 		log.info("Debug delete");
 		
 		//Comment below 2 lines to make test fail
-		//expenseRepository.deleteById(expenseId);
-		//expenseRepository.flush();
+		expenseRepository.deleteById(expenseId);
+		expenseRepository.flush();
 	}
 
 }
